@@ -1,5 +1,14 @@
 @import "bootstrap";
 
+body {
+  background: image_url('swirl_pattern.png');
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+.navbar {
+  background: image_url('dark-sharp.png');
+  box-shadow: 5px 5px 10px grey;
+}
 .booyah-box {
 -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
