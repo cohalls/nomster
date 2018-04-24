@@ -4,6 +4,7 @@ class Place < ApplicationRecord
   validates :name, length: { minimum: 3 }
 
   has_many :comments
+  has_many :photos
 
   geocoded_by :address
   after_validation :geocode
