@@ -60,7 +60,7 @@
   </div>
 </div>
 <div class="col-10 offset-1">
-  <h1 class="float-left">Comments</h1>
+<h1 class="float-left">Comments</h1>
 
 <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#myModal">
@@ -81,7 +81,7 @@
     </blockquote>
   </div>
 <% end %>
-
+</div>
 <!-- Modal -->
 <div class="modal fade" id="PictureModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -106,19 +106,17 @@
   </div>
 </div>
 <div class="col-10 offset-1">
-  <h1 class="float-left">Photos</h1>
-
+<h1 class="float-left">Photos</h1>
 <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary btn-md float-right" data-toggle="modal" data-target="#PictureModal">
     Add a Photo
   </button>
 </div>
 <div class="clear"></div>
-<% @place.photos.each do |photo| %>
-  <%= image_tag photo.picture, class:"image"%>
+  <% @place.photos.each do |photo| %>
+    <%= image_tag photo.picture, class:"image"%>
   <div class="caption text-center">
     <%= photo.caption %>
   </div>
-<% end %>
-</div>
+  <% end %>
 </div>
